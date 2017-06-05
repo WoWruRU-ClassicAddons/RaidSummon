@@ -206,6 +206,110 @@ elseif ( GetLocale() == "frFR" ) then
   RSM_MENU_SHARDS=           "Fragments d'âme";
   RSM_MENU_CLOSE=            "Fermer";
 
+-- russian localization by Lichery
+elseif ( GetLocale() == "ruRU" ) then
+  BINDING_HEADER_RAIDSUMMON= "RaidSummon";
+  BINDING_NAME_RAIDSUMMON=   "Призыв цели/очереди";
+
+  RSM_SPELL_NAME=            "Ритуал призыва";
+  RSM_SPELL_HELP=            "Начинает ритуал приыва выбранного члена группы или следующего игрока в очереди. Если нет игрока в очереди или в цели, то вам предложит призвать весь рейд. Удерживая клавишу Ctrl и нажав на кнопку вы пропустите первого игрока в очереди на прзыв. Нажатие правой кнопки мыши открывает опции.";
+  RSM_SPELL_QUEUE_EMPTY=     "Очередь пуста.";
+  RSM_SPELL_QUEUE=           "Игроков в очереди: ";
+
+  RSM_HEADER=                "RaidSummon: ";
+  RSM_LOADED=                "RaidSummon загружен. Введите <h>/rsm</h> для помощи!";  
+  RSM_MORE=                  "Больше игроков должны быть призваны. Следующий: %s.";
+  RSM_REQUEST=               "Призыв запроса %s.";
+  RSM_NOTHING_TO_DO=         "Нет запросов в очередь на призыв.";
+  RSM_FAILED=                "Ритуал призыва прерван!";
+  RSM_NOSHARDSUMMONING=      "Не хватает камней душ!";
+  RSM_GHOSTSUMMONING=        "%s мертв или не в сети и не может быть призван!";
+  RSM_GHOSTSKIPPED=          "%s мертв или не в сети и был перемещен в конец очереди.";
+  RSM_CONFIRMMASSSUMMON=     "Вы хотите, чтобы призвались все игроки, которые в настоящее время не в близости?";
+  RSM_SUMMONING=             "Призыв %s.";
+  RSM_NOT_IN_RAID=           "Ваша цель не в группе или рейде!";
+  RSM_ALL_IN_RANGE=          "Все участники рейда находятся в диапазоне.";
+  RSM_NOT_IN_INSTANCE=       "Массовый призыв недоступен в пределах подземелья.";
+  RSM_ALREADY_SUMMONED=      "%s уже был призван, и, таким образом, был удален из очередии.";
+  RSM_ALMOST_SUMMONED=       "%s собирается быть призван другим чернокнижником и, таким образом, перемещается в конец очереди.";
+  RSM_GROUP_REQUIRED=        "Вы должны быть в группе или рейде.";
+  RSM_PRE2x2MIGRATION=       "Настройки от версии 2.1 и ниже, были импортированы, все остальные параметры должны быть настроены снова.";
+  RSM_NO_KEYWORDS=           "Нельзя объявлять так как нет определенных ключевых слов!";
+  RSM_UNKNOWN_PARAMETER=     "Неизвестный параметр.";
+  RSM_MASSSUMMON=            "Основной список для массового призыва.";
+  RSM_RESET_QUEUE=           "Очередь была сброшена.";
+  RSM_QUEUED_PLAYERS=        "Игроки в очереди: ";
+  RSM_DEQUEUE_PLAYER=        "%s был удален из очереди.";
+  RSM_ADDON_ENABLED=         "RaidSummon включен.";
+  RSM_ADDON_DISABLED=        "RaidSummon выключен.";
+  RSM_LISTEN_ENABLED=        "Запросы на призыв будут обрабатываться.";
+  RSM_LISTEN_DISABLED=       "Запросы на призыв не будут обрабатываться.";
+  RSM_ANNOUNCE_ENABLED=      "Объявления призыва включены.";
+  RSM_ANNOUNCE_DISABLED=     "Объявления призыва выключены.";
+  RSM_WHISPER_ENABLED=       "Игроки будут уведомлены.";
+  RSM_WHISPER_DISABLED=      "Игроки не будут уведомлены.";
+  RSM_END_OF_LIST=           "(Конец списка)";
+  RSM_STATS_RESET=           "Статистика была обнулена.";
+  RSM_TOTALS_RAID=           "Всего призывов каждого члена рейда:";
+  RSM_TOTALS=                "Всего призывов: ";
+  RSM_MINIMUM_SHARDS=        "Минимальное количество камней для призывов: %n";
+  RSM_MINIMUM_DISTANCE=      "Минимальная дистанция для массового призыва: %n Yrd";  
+  RSM_WHISPERLANG=           "Язык сообщений игроков: ";
+  RSM_KEYWORDS=              "Ключевое слово (%l): %k";
+  RSM_KEYWORDRESET=          "Ключевые слова были сброшены. Пожалуйста, определите новые ключевые слова, по крайней мере одно ключевое слово требуется для обработки запросов на призыв.";
+  RSM_REPLIES_HIDDEN=        "RaidSummon реплики не будут отображаться.";
+  RSM_REPLIES_SHOWN=         "RaidSummon реплики будут отображаться.";
+  RSM_REQUESTS_HIDDEN=       "Принятые запросы на призыв не будут отображаться.";
+  RSM_REQUESTS_SHOWN=        "Принятые запросы на призыв будут отображаться.";
+  RSM_BLINKING_ENABLED=      "'Ритуал призыва' будет мигать пока игроки выстраиваются в очередь.";
+  RSM_BLINKING_DISABLED=     "'Ритуал призыва' не будет мигать пока игроки выстраиваются в очередь.";
+
+  RSM_HELP_MSG0=             "RaidSummon: Введите <h>/raidsummon</h> (или <h>/rsm</h>) далее....";
+  RSM_HELP_MSG1=             "<h>basic</h>, <h>logging</h> или <h>settings</h> для дальнейшей помощи!";
+  RSM_HELP_MSG2=             "<h>togglehiderequests/thq</h> переключить отображение принятых запросов в чате.";
+  RSM_HELP_MSG3=             "<h>toggleenable/te</h> включить/выключить RaidSummon";
+  RSM_HELP_MSG4=             "<h>togglelisten/tl</h> переключить прослушивание запросов призыва";
+  RSM_HELP_MSG5=             "<h>toggleannounce/ta</h> переключить объявление призыва в группу/рейд";
+  RSM_HELP_MSG6=             "<h>status</h> показать текущие настройки";
+  RSM_HELP_MSG7=             "<h>list</h> список всех игроков в очереди";
+  RSM_HELP_MSG8=             "<h>clear</h> сброс очереди";
+  RSM_HELP_MSG9=             "<h>skip</h> пропустить/удалить первого игрока в очереди";
+  RSM_HELP_MSG10=            "<h>shards <num></h> установить минимальное количество камней для призывов";
+  RSM_HELP_MSG11=            "<h>stats <num></h> показать общие призывы и призывы за игроков";
+  RSM_HELP_MSG12=            "<h>raidstats <num></h> показать только призыв игроков в текущем рейде";
+  RSM_HELP_MSG13=            "<h>postraidstats <num></h> опубликовать общие вызовы членов рейда в рейд";
+  RSM_HELP_MSG14=            "<h>resetstats</h> сброс всей статистики призывов";
+  RSM_HELP_MSG15=            "<h>announce</h> объявлять призыв рейда в группу/рейд";
+  RSM_HELP_MSG16=            "<h>lang <de | en | fr | ru ></h> смена языка";
+  RSM_HELP_MSG17=            "<h>addkeyword</h> добавляет ключевое слово в список ключевых слов, которые вызывают запрос призыва (ключевые слова могут содержать пробелы)";
+  RSM_HELP_MSG18=            "<h>resetkeywords</h> сброс списка ключевых слов, которые вызывают запрос призыва";
+  RSM_HELP_MSG19=            "<h>togglewhisper/tw</h> переключение информирования игроков";
+  RSM_HELP_MSG20=            "<h>togglehidereplies/thp</h> скрыть/показать ответы RaidSummon";
+  RSM_HELP_MSG21=            "<h>toggleflash/tf</h> переключение 'Ритуал призыва' будет мигать пока игроки выстраиваются в очередь.";
+  RSM_HELP_MSG22=            "<h>distance <num></h> минимальное расстояние, прежде чем игроки будут выбраны для массового призыва";
+  
+  RSM_UFMENU_SUMMON=         "Призыв";
+  RSM_MENU_SUMMON=           "Призвать следующего игрока в очереди";
+  RSM_MENU_SUMMON_TARGET=    "Призвать текущую цель";
+  RSM_MENU_SUMMON_ALL=       "Призвать всю группу";
+  RSM_MENU_SKIP=             "Пропустить игрока";
+  RSM_MENU_CLEAR=            "Очистить очередь";
+  RSM_MENU_STOP=             "Прекратить массовый призыв";
+  RSM_MENU_ANNOUNCE=         "Объявления RaidSummon";
+  RSM_MENU_PROCESS=          "Прислушиваться к запросам призыва";
+  RSM_MENU_NOTIFICATIONS=    "Уведомления/запросы";
+  RSM_MENU_SELECT=           "Выбрать";
+  RSM_MENU_ANNOUNCING=       "Объявлять призывы";
+  RSM_MENU_WHISPERING=       "Ответ на запросы шепотом";
+  RSM_MENU_DISPLAY=          "Окно чата";
+  RSM_MENU_HIDE_REQUESTS=    "Скрыть принятые запросы";
+  RSM_MENU_HIDE_TELLS=       "Скрыть ответы RaidSummon";
+  RSM_MENU_FLASHING=         "Мигание, пока игроки выстраиваются в очередь";
+  RSM_MENU_LOCALE=           "Язык";
+  RSM_MENU_SHARD_MINIMUM=    "Необходимые камни для принятия запросов";
+  RSM_MENU_SHARDS=           "камни душ";
+  RSM_MENU_CLOSE=            "Закрыть";
+
 -- defaulting to english localization
 else
   BINDING_HEADER_RAIDSUMMON= "RaidSummon";
@@ -320,6 +424,7 @@ RSM_DEFAULT_KEYWORDS= {
   ["en"]= { "summon" },
   ["de"]= { "port" },
   ["fr"]= { "invocation" },
+  ["ru"]= { "сум" }
 };
 RSM_LANG= {
   ["en"]= {
@@ -411,5 +516,35 @@ RSM_LANG= {
     ["END_OF_LIST"]=    "- - -", --"Fin de la liste.",
     ["ANNOUNCE1"]=      "> Please whisper keyword \"%k\",",  -- FIXME: translate (text changed, sorry ;) )
     ["ANNOUNCE2"]=      "> if you need to be summoned.",
+  },
+  ["ru"]= {
+    ["LANGUAGE"]=       "Russian",
+    ["ANNOUNCE_PORT"]=  "Призыв >>> %s <<<",
+    ["PORT_SUPPORT"]=   "Пожалуйста, нажмите на мой портал.",
+    ["PORT_FAILED"]=    "Призыв не удался. (Пожалуйста, не двигаться во время ритуала.) :p",
+    ["WAIT"]=           RSM_PREFIX.."Хорошо. %n призовет вас через несколько минут, пожалуйста не спрашивайте других чернокнижников.",
+    ["BUSY"]=           RSM_PREFIX.."Хорошо. %n призовет вас как только %g{he,she} выйдет из боя(живой), пожалуйста не спрашивайте других чернокнижников.",
+    ["INCOMING"]=       RSM_PREFIX.."Хорошо. Это не составит проблем.",
+    ["SKIP"]=           RSM_PREFIX.."%n ваша просьба на призыв удалена.",
+    ["INSTANCE_NONE"]=  RSM_PREFIX.."Вы находитесь не в %n, но пожалуйста не спрашивайте других чернокнижников, пока %g{he,she} не удалит вас из очереди.",
+    ["INSTANCE_AUTO"]=  RSM_PREFIX.."%w призовет вас через несколько минут так как вы находитесь не в %n. Пожалуйста не спрашивайте других чернокнижников.",
+    ["INSTANCE_MANUAL"]=RSM_PREFIX.."%n уже внутри подземелья, но %w нет. Пожалуйста спросите %h{him,her}. Спасибо!",
+    ["AFK_NONE"]=       RSM_PREFIX.."Сожалею. %n отошел от клавиатуры. Пожалуйста спросите другого чернокнижника.",
+    ["AFK_AUTO"]=       RSM_PREFIX.."%w призовет вас через несколько минут так как %n отошел от клавиатуры. Пожалуйста не спрашивайте других чернокнижников.",
+    ["AFK_MANUAL"]=     RSM_PREFIX.."Сожалею. %n отошел от клавиатуры. %w находится рядом с %g{his,her} и может призвать вас. Пожалуйста, спросите %h{him,her}. Спасибо!",
+    ["FULL_NONE"]=      RSM_PREFIX.."Сожалею. Слишком много игроков в очереди. Спросите другого чернокнижника.",
+    ["FULL_AUTO"]=      RSM_PREFIX.."%w призовет вас через несколько минут так как %n имеет очень много игроков в %g{his,her} очереди. Пожалуйста не спрашивайте других чернокнижников.",
+    ["FULL_MANUAL"]=    RSM_PREFIX.."Сожалею. Слишком много игроков в очереди. %w находится рядом с %n и может призвать вас. Пожалуйста, спросите %h{him,her}. Спасибо!",
+    ["SHARDS_NONE"]=    RSM_PREFIX.."Извините. %n нет камней. Пожалуйста, спросите другого чернокнижника.",
+    ["SHARDS_AUTO"]=    RSM_PREFIX.."%w призовет вас через несколько минут, так как %n не имеет камней. Пожалуйста не спрашивайте других чернокнижников.",
+    ["SHARDS_MANUAL"]=  RSM_PREFIX.."Извините. %n нет камней. %w находится рядом с %n и может призвать вас. PПожалуйста, спросите %h{him,her}. Спасибо!",
+    
+    ["SHARDS_WHOOPS"]=  RSM_PREFIX.."Упс... %n загадочным образом закончились камни. :( Надеюсь другой чернокнижник вам поможет.",
+    ["YOU_ARE_DEAD"]=   RSM_PREFIX.."%n призовет вас как только вы воскресните. ;)",
+    ["NOW"]=            RSM_PREFIX.."Приготовьтесь к призыву! ;)",
+    ["TOTALS_RAID"]=    "Общий список членов рейда для призыва:",
+    ["END_OF_LIST"]=    "- - -",
+    ["ANNOUNCE1"]=      "> Пожалуйста, напишите ключевое слово \"%k\",",
+    ["ANNOUNCE2"]=      "> если вас нужно призвать.",
   },
 }

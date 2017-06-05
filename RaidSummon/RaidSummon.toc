@@ -2,6 +2,7 @@
 ## Title: RaidSummon
 ## Version: 2.2
 ## Notes: Easy Summoning of Raid/Group Members
+## Notes-ruRU: Улучшенный призыв игроков в рейде/группе
 ## Author: nyda (reg[at]nyda[dot]info)
 ## OptionalDeps: Caster
 ## SavedVariables: rsmSaved
